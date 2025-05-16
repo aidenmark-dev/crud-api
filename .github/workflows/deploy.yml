@@ -1,4 +1,4 @@
-name: Deploy Task Management API
+name: Deploy CRUD API
 
 on:
   push:

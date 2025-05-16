@@ -1,7 +1,7 @@
 # "org" ensures this Service is used with the correct Serverless Framework Access Key.
-org: aidendev09
+org: projectdemo
 # "app" enables Serverless Framework Dashboard features and sharing them with other Services.
-app: task-api
+app: test
 # "service" is the name of this project. This will also be added to your AWS resource names.
 service: crud-api
 
@@ -11,7 +11,7 @@ plugins:
   - serverless-esbuild
 
 provider:
-  name: account-dev
+  name: aws
   runtime: nodejs20.x
   stage: ${opt:stage, 'dev'}
   region: us-east-1
@@ -93,7 +93,6 @@ resources:
         ManagedPolicyArns:
           - 'arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs'
         Path: /
-        RoleName: serverlessApiGatewayCloudWatchRole
 
     ApiGatewayAccount:
       Type: AWS::ApiGateway::Account
