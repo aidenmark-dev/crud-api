@@ -46,8 +46,8 @@ functions:
           path: tasks
           cors: true
 
-  getTasks:
-    handler: src/handlers/task/getTaskListlist.handler
+  getTaskList:
+    handler: src/handlers/task/getTaskList.handler
     events:
       - http:
           method: get

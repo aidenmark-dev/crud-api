@@ -100,7 +100,7 @@ curl https://your-api-id.execute-api.us-east-1.amazonaws.com/dev/items/{item-id}
 ```bash
 curl -X PUT https://your-api-id.execute-api.us-east-1.amazonaws.com/dev/items/{item-id} \
  -H "Content-Type: application/json" \
- -d '{"status": "UPDATED"}'
+ -d '{"status": "COMPLETED"}'
 ```
 
 ### Delete a task
